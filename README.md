@@ -1,0 +1,1 @@
+docker run -it --net="host" --env MESOS_MASTER_HOSTNAME=ec2-54-224-141-232.compute-1.amazonaws.com --env MESOS_MASTER_PORT=7101 --env MESOS_AGENT_IP=10.16.198.216 --env MESOS_AGENT_HOSTNAME=raspberrypi mesos-agent-pi:arm-mesos-0.24.1
