@@ -14,7 +14,7 @@ Please confirm that you see free swap space based on the last command
 ### Building mesos inside of Docker on your Raspberry Pi 3
 ```
 cd mesos-docker
-docker build -t mesos-build:arm-mesos-0.24.1
+docker build -t mesos-build:arm-mesos-0.24.1 .
 ```
 Note that this will take approximately two hours on a Raspberry Pi 3.  Note that this currently builds 0.24.1, but you can change the tag to a later version (your mileage may vary).
 
