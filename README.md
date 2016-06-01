@@ -1,4 +1,5 @@
 ## To build:
+### Setting up additional swap space
 Setup a swap file on your Raspberry Pi 3
 ```
 dd if=/dev/zero of=/var/swap2 bs=1024 count=1048576
@@ -6,10 +7,11 @@ chown root:root /var/swap2
 chmod 0600 /var/swap2
 mkswap /var/swap2
 swapon /var/swap2
-free -h (confirm that swap is enabled)
+free -h
 ```
 Please confirm that you see free swap space based on the last command
 
+### Building mesos inside of Docker on your Raspberry Pi 3
 ```
 cd mesos-docker
 docker build -t mesos-build:arm-mesos-0.24.1
